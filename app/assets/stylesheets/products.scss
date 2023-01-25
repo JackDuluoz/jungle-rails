@@ -92,6 +92,15 @@ main section.categories-show {
           background-color: rgba(0, 130, 29, 0.7);
           color: white;
         }
+        #sold-out {
+          background-color: red;
+          color: white;
+          pointer-events: none;
+        }
+        #sold-out-add {
+          pointer-events: none;
+          opacity: 50%;
+        }
       }
     }
   }
