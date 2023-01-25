@@ -4,6 +4,8 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if enhanced_cart[0] %>
+ 
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -48,5 +50,11 @@
       <% end %>
     </div>
   </div>
+
+  <% else %>
+
+  <div> Your cart is currently empty. Please return to the <a href="<%= root_path %>">homepage</a> to add some plants to your cart! </div>
+
+  <% end %>
 
 </section>
