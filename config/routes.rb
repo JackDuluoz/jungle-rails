@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'about', to: 'about#index'
   root to: 'products#index'
 
-  resources :products, only: [:index, :show]
+  resources :products, only: [:show]
   resources :categories, only: [:show]
 
   resource :cart, only: [:show] do
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
     post   :remove_item
   end
 
-  resources :orders, only: [:create, :show]
+  resources :orders, only: [:index, :show]
 
   namespace :admin do
     root to: 'dashboard#show'
