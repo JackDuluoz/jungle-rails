@@ -1,5 +1,5 @@
 
-describe('product details page', () => {
+describe('home page', () => {
   it('visits homepage', () => {
     cy.visit('http://localhost:3000');
   });
@@ -14,18 +14,15 @@ describe('product details page', () => {
     cy.get(".products article").should("have.length", 2);
   });
 
-  it("Lets you visit product page", () => {
+   it("starts with an empty cart", () => {
     cy.visit('/')
-    cy.get('.products article').first().click()
-    cy.url().should("include", "/products/2")
-    cy.visit('/products/2')
+    cy.get('#cart-size').contains("(0)")
   })
 
-  it("Lets you visit product page", () => {
+  it("adds an item to the cart", () => {
     cy.visit('/')
-    cy.get('.products article').last().click()
-    cy.url().should("include", "/products/1")
-    cy.visit('/products/1')
+    cy.get(".products div button").first().click({force: true})
+    cy.get('#cart-size').contains("(1)")
   })
 
 });
