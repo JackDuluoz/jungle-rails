@@ -2,7 +2,15 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Screenshots
 
+!["home screen"](https://github.com/JackDuluoz/jungle-rails/blob/master/docs/home.png?raw=true)
+!["products"](https://github.com/JackDuluoz/jungle-rails/blob/master/docs/products.png?raw=true)
+!["my cart"](https://github.com/JackDuluoz/jungle-rails/blob/master/docs/my-cart.png?raw=true)
+!["stripe payment"](https://github.com/JackDuluoz/jungle-rails/blob/master/docs/stripe-payment.png?raw=true)
+!["order confirmation"](https://github.com/JackDuluoz/jungle-rails/blob/master/docs/order-confirmation.png?raw=true)
+!["admin options"](https://github.com/JackDuluoz/jungle-rails/blob/master/docs/admin-products.png?raw=true)
+!["user registration"](https://github.com/JackDuluoz/jungle-rails/blob/master/docs/registration.png?raw=true)
 
 ## Setup
 
