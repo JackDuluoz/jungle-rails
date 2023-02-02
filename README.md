@@ -2,6 +2,8 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
@@ -21,6 +23,8 @@ If Rails is complaining about authentication to the database, uncomment the user
 
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
+Input a date after the current date and use any three numbers for the CVC code.
+
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
@@ -30,8 +34,20 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - PostgreSQL 9.x
 - Stripe
 
-RAILS_ENV=test rails s => test server
-bin/rails cypress:run => run cypress tests
+## Testing
 
-bin/rails s -b 0.0.0.0 => development server
-bundle exec rspec --format documentation => run other tests
+To run cypress tests in the test database, run the test server using:
+
+RAILS_ENV=test rails s
+
+Then use:
+
+bin/rails cypress:run
+
+To run rspec tests you can use the devlopment server:
+
+bin/rails s -b 0.0.0.0
+
+And run:
+
+bundle exec rspec --format documentation
