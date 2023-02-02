@@ -29,3 +29,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+RAILS_ENV=test rails s => test server
+bin/rails cypress:run => run cypress tests
+
+bin/rails s -b 0.0.0.0 => development server
+bundle exec rspec --format documentation => run other tests

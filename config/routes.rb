@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     post   :remove_item
   end
 
-  resources :orders, only: [:index, :show]
+  resources :orders, only: [:create, :show]
 
   namespace :admin do
     root to: 'dashboard#show'
